@@ -221,6 +221,10 @@ body {
   cursor: pointer;
 }
 
+.place__website__link:hover {
+  color: #b2b3b4;
+}
+
 .place__paragraph {
   font-style: normal;
   font-weight: normal;
