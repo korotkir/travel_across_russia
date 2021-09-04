@@ -10,20 +10,21 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
-<div class="wrapper">
-    <div class="header">
+
+    <header class="header">
       <div class="header__logo"><a href="#"><img src="img/logo.svg" alt="Россия"></a></div>
       <div class="header__langLinks">
           <a class="header__langLink header__langLink_active" href="#">Ru</a>
           <a class="header__langLink" href="#">En</a>
       </div>
-    </div>
+    </header>
+    <main class="content">
     <div class="lead">
         <h1 class="lead__title">Путешествия
 по России</h1>
         <h3 class="lead__subtitle">Настоящая страна не в выпусках
 новостей, а здесь.</h3>
-        <figure>
+        <figure class="lead__present">
             <img class="lead__image" src="img/image.png" alt="#">
             <figcaption class="lead__caption">ваша полка — верхняя</figcaption>
         </figure>
@@ -131,20 +132,16 @@
 до Байкала на электричках.</p>
             </div>
         </div>
-    </div>
-
-<div class="wrapper">
-    <nav class="footer">
+    </main>
+    <footer class="footer">
         <ul class="footer__links">
-            <li class="footer__link"><a href="#">Карты</a></li>
-            <li class="footer__link"><a href="#">Погода</a></li>
-            <li class="footer__link"><a href="#">Расписание</a></li>
-            <li class="footer__link"><a href="#">Календарь</a></li>
-            <li class="footer__link"><a href="#">Путешествия</a></li>
+            <li class="footer__link"><a class="footer__item" href="#">Карты</a></li>
+            <li class="footer__link"><a class="footer__item" href="#">Погода</a></li>
+            <li class="footer__link"><a class="footer__item" href="#">Расписание</a></li>
+            <li class="footer__link"><a class="footer__item" href="#">Календарь</a></li>
+            <li class="footer__link"><a class="footer__item" href="#">Путешествия</a></li>
         </ul>
             <div class="footer__copyright">© 2021. Коротееев К.</div>
-        </nav>
-    </div>
-</div>
+        </footer>
 </body>
 </html>

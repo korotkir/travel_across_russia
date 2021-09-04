@@ -1,23 +1,11 @@
 @import "../node_modules/normalize.css/normalize.css";
-img {
-  max-width: 100%;
-}
-
-p {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-}
-
 body {
-  width: 100%;
-  height: 100%;
   background: #2a2c2f;
   font-family: "Inter", "Arial", sans-serif;
   color: white;
 }
 
-.wrapper {
+.content {
   max-width: 1184px;
   margin: 0 auto;
 }
@@ -41,19 +29,16 @@ body {
   display: flex;
 }
 
-.header__langLinks a {
-  font-size: 24px;
-  font-weight: 400;
-  line-height: 1.8vw;
-  color: white;
-}
-
 .header__langLinks a:first-child {
   margin-right: 1.4vw;
 }
 
 .header__langLink {
   text-decoration: none;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.8vw;
+  color: white;
 }
 
 .header__langLink_active {
@@ -95,13 +80,18 @@ body {
   white-space: pre-wrap;
 }
 
+.lead__present {
+  margin: 0;
+  padding: 0;
+}
+
 .lead__image {
   display: block;
   object-fit: cover;
 }
 
 .lead__caption {
-  margin-top: -3%;
+  margin-top: -30px;
   overflow: hidden;
   font-style: normal;
   font-weight: normal;
@@ -171,13 +161,13 @@ body {
 
 .places {
   margin-top: 90px;
-  padding: 0 7.8vw;
+  padding: 0 100px;
 }
 
 .place {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 2.5vw;
+  grid-gap: 32px;
   margin-bottom: 100px;
 }
 
@@ -211,6 +201,7 @@ body {
   line-height: 22px;
   text-decoration-line: underline;
   cursor: pointer;
+  color: white;
 }
 
 .place__website__link:hover {
@@ -269,19 +260,21 @@ body {
   max-width: 1184px;
   height: auto;
   object-fit: cover;
+  -webkit-transition: 3s ease;
 }
 
 .cover img:hover {
-  opacity: 0.4;
+  opacity: 0.3;
   transition: 1s;
 }
 
 .footer {
-  margin: 92px 24px 25px;
-  padding: 0;
+  width: 1184px;
+  margin: 0 auto;
+  padding: 92px 0 25px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   line-height: 18px;
 }
 
@@ -291,10 +284,6 @@ body {
   padding: 0;
 }
 
-.footer__links a:last-child {
-  margin-right: 0;
-}
-
 .footer__link {
   list-style-type: none;
   display: inline;
@@ -302,7 +291,8 @@ body {
   padding: 0;
 }
 
-.footer__link a {
+.footer__item {
+  color: white;
   text-decoration: none;
 }
 
