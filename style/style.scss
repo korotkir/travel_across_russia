@@ -155,6 +155,8 @@ body {
   font-weight: 400;
 }
 
+// PHOTO-GRID
+
 .photo-grid {
   margin-top: 80px;
   display: grid;
@@ -169,6 +171,8 @@ body {
   display: block;
   object-fit: cover;
 }
+
+// PLACES
 
 .places {
   margin-top: 90px;
@@ -241,6 +245,8 @@ body {
   padding: 0;
 }
 
+//COVER
+
 .cover {
   margin-top: 92px;
   display: grid;
@@ -281,6 +287,8 @@ body {
   opacity: 0.3;
   transition: 1s;
 }
+
+// FOOTER
 
 .footer {
   max-width: 100%;
