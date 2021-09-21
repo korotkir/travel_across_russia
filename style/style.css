@@ -42,10 +42,6 @@ body {
   margin-right: 18px;
 }
 
-.header__langLink_active {
-  text-decoration: underline;
-}
-
 .header__langLink:hover {
   text-decoration: underline;
 }

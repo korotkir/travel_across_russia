@@ -1,5 +1,6 @@
 const ru = {
- 'leadTitle' : 'Путешествия по России',
+ 'leadTitle' : 'Путешествия\n' +
+  'по России',
  'leadSubtitle' : 'Настоящая страна не в выпусках новостей, а здесь.' ,
  'leadCaption' : 'ваша полка — верхняя',
  'introTitle' : 'Чего мы там не видели?',
@@ -9,7 +10,8 @@ const ru = {
  'footerCopyright' : '© 2021. Коротееев К.'
 }
 const en = {
- 'leadTitle' : 'Traveling in Russia',
+ 'leadTitle' : 'Traveling\n' +
+  'in Russia',
  'leadSubtitle' : 'The real country is not on the news, but here.' ,
  'leadCaption' : 'your shelf is top',
  'introTitle' : 'What didn\'t we see there?',
