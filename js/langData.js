@@ -18,5 +18,5 @@ const en = {
  'placeTitle' : ['Curonian Spit', 'Kola', 'Altai', 'Winter Baikal', 'Karelia'],
  'coverTitle' : 'To Lake Baikal\' on the dogs',
  'footerItem' : ['Maps', 'Weather', 'Schedule', 'Calendar', 'Travel'],
- 'footerCopyright' : '© 2021. Koroteev K..'
+ 'footerCopyright' : '© 2021. Koroteev K.'
 }

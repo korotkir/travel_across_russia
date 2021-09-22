@@ -7,13 +7,15 @@ location.href = window.location.pathname + '#ru'
 function englishLang() {
  location.href = window.location.pathname + '#eng'
 
- console.log(typeof en.leadCaption)
-
  Object.keys(en).map(
   (el, i, array) => typeof en[el] === 'string'
-       ? document.querySelector(antiCamelCase(el)).textContent = en[el] : ''
+       ? document.querySelector(antiCamelCase(el)).textContent = en[el]
+       : Object.values(document.querySelectorAll(antiCamelCase(el)))
+            .map((el, i) => el.textContent = en['placeTitle'][i])
+
  )
- // const leadTitle = document.querySelector('.lead__title')
- // leadTitle.textContent = en.leadTitle
+
+ console.log(en['placeTitle'])
+
 }
 
