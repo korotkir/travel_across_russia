@@ -1,4 +1,4 @@
-const ru = {
+const rusDict = {
  'leadTitle' : 'Путешествия\n' +
   'по России',
  'leadSubtitle' : 'Настоящая страна не в выпусках новостей, а здесь.' ,
@@ -9,7 +9,7 @@ const ru = {
  'footerItem' : ['Карты', 'Погода', 'Расписание', 'Календарь', 'Путешествия'],
  'footerCopyright' : '© 2021. Коротееев К.'
 }
-const en = {
+const engDict = {
  'leadTitle' : 'Traveling\n' +
   'in Russia',
  'leadSubtitle' : 'The real country is not on the news, but here.' ,
@@ -20,3 +20,5 @@ const en = {
  'footerItem' : ['Maps', 'Weather', 'Schedule', 'Calendar', 'Travel'],
  'footerCopyright' : '© 2021. Koroteev K.'
 }
+
+

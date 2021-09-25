@@ -1,21 +1,27 @@
-const eng = document.querySelector('.header__langLinkEng')
-eng.addEventListener('click', englishLang)
+document.addEventListener("DOMContentLoaded", function() {
+ const rus = document.querySelector('.header__langLinkRu')
+ const eng = document.querySelector('.header__langLinkEng')
 
-console.log('worked')
-location.href = window.location.pathname + '#ru'
+ rus.addEventListener('click', translator(rusDict))
+ eng.addEventListener('click', translator(engDict))
 
-function englishLang() {
- location.href = window.location.pathname + '#eng'
+ translator(rusDict)
 
- Object.keys(en).map(
-  (el, i, array) => typeof en[el] === 'string'
-       ? document.querySelector(antiCamelCase(el)).textContent = en[el]
-       : Object.values(document.querySelectorAll(antiCamelCase(el)))
-            .map((el, i) => el.textContent = en['placeTitle'][i])
+ function translator(dict) {
 
- )
+  return function () {
+   Object.keys(dict).map(
+    (element, index) => typeof Object.values(dict)[index] === 'string'
+     ? document.querySelector(antiCamelCase(element)).textContent = dict[element]
+     : typeof Object.values(dict)[index] !== 'string'
+      ? Object.values(document.querySelectorAll(antiCamelCase(element)))
+       .map((el, i) => el.textContent = dict[element][i]) : '')
+  }
+ }
 
- console.log(en['placeTitle'])
+})
 
-}
+
+
+
 
