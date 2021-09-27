@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function() {
  rus.addEventListener('click', translator(rusDict))
  eng.addEventListener('click', translator(engDict))
 
- translator(rusDict)
+ translator(rusDict)()
 
  function translator(dict) {
 
