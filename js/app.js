@@ -3,9 +3,6 @@ document.addEventListener("DOMContentLoaded", function() {
  const eng = document.querySelector('.header__langLinkEng')
  const introNumber = Object.values(document.querySelectorAll('.intro__number')).map(el => el.textContent)
 
- let arr = [1,2,3,4,5]
- console.log(introNumber)
-
  rus.addEventListener('click', translator(rusDict))
  eng.addEventListener('click', translator(engDict))
 
@@ -14,8 +11,10 @@ document.addEventListener("DOMContentLoaded", function() {
  function translator(dict) {
 
   return function () {
+   document.title = dict.documentTitle
+
    Object.keys(dict).map(
-    (element, index) => typeof Object.values(dict)[index] === 'string'
+    (element, index) => typeof Object.values(dict)[index] === 'string' && index !== 0
      ? document.querySelector(antiCamelCase(element)).textContent = dict[element]
      : typeof Object.values(dict)[index] !== 'string'
       ? Object.values(document.querySelectorAll(antiCamelCase(element)))
@@ -23,7 +22,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
    Object.values(document.querySelectorAll('.intro__fact'))
     .map((el, i) => el.insertAdjacentHTML('beforeend', `<span class="intro__number">${dict.introNumber[i]}</span>`))
-
 
   }
  }

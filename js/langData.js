@@ -1,4 +1,5 @@
 const rusDict = {
+ 'documentTitle' : 'Путешествия по России',
  'leadTitle' : 'Путешествия\n' +
   'по России',
  'leadSubtitle' : 'Настоящая страна не в выпусках новостей, а здесь.' ,
@@ -16,6 +17,7 @@ const rusDict = {
  'footerCopyright' : '© 2021. Коротееев К.'
 }
 const engDict = {
+ 'documentTitle' : 'Travel to Russia',
  'leadTitle' : 'Traveling\n' +
   'in Russia',
  'leadSubtitle' : 'The real country is not on the news, but here.' ,
