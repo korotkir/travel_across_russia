@@ -19,13 +19,7 @@ document.addEventListener("DOMContentLoaded", function() {
       ? Object.values(document.querySelectorAll(antiCamelCase(element)))
        .map((el, i) => el.textContent = dict[element][i])
       : Object.values(document.querySelectorAll(antiCamelCase(element)))
-       .map((el, i) => {
-        el.textContent = ''
-        el.insertAdjacentHTML('afterbegin', `
-            <p class="place__text">${dict[element][i][0]}</p>
-            <p class="place__text">${dict[element][i][1] || ''}</p>
-            `)
-       } ))
+       .map((el, i) => {objectArray('place__text', dict, el, element, i)} ))
 
    Object.values(document.querySelectorAll('.intro__fact'))
     .map((el, i) => el.insertAdjacentHTML('beforeend', `<span class="intro__number">${dict.introNumber[i]}</span>`))
