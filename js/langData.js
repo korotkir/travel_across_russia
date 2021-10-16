@@ -1,3 +1,9 @@
+/*
+
+Первый ключ объекта всегда 'documentTitle', он не учитывается в выполнении скрипта.
+
+ */
+
 const rusDict = {
  'documentTitle' : 'Путешествия по России',
  'leadTitle' : 'Путешествия\n' +
@@ -37,6 +43,7 @@ const rusDict = {
  'footerItem' : ['Карты', 'Погода', 'Расписание', 'Календарь', 'Путешествия'],
  'footerCopyright' : '© 2021. Коротееев К.'
 }
+
 const engDict = {
  'documentTitle' : 'Travel to Russia',
  'leadTitle' : 'Traveling\n' +
